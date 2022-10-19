@@ -74,7 +74,7 @@ This project compared Pre-FOG detection developed by using ProtoNN with other co
 adjust some incompatible codes and libraries in order to successfully run in our computer. There are two main focuses in this comparison, such as performance and model size. The results are shown in Table 3. Column “Acc” means the accuracy obtained by each classifier. The accuracy was calculated by using the equation (1). Precision and recall were calculated by using equations (2) and (3), respectively. Terms true positives (tp), true negatives (tn), false positives (fp), and false negatives (fn) compare the results of the classifier under test with external judgments. 
 
 
-| No. | Algorithm                    | Acc. | Precision | Precision |         | Recall |        |         | Model Size |
+| No. | Algorithm                    | Acc. | Precision | Precision |Precision| Recall | Recall |  Recall | Model Size |
 |-----|------------------------------|------|:---------:|-----------|---------|:------:|--------|---------|------------|
 |     |                              |      | NA        | No FOG    | Pre-FOG | NA     | No FOG | Pre-FOG |            |
 | 1   | Support Vector Machine (SVM) | 0.72 | -         | 0.75      | 0.35    | -      | 0.93   | 0.1     | 3.99 MB    |
