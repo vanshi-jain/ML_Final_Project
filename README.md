@@ -73,21 +73,15 @@ pruning to force the model to fit in memory.
 This project compared Pre-FOG detection developed by using ProtoNN with other conventional machine learning algorithms, such as Support Vector Machine (SVM), Decision Tree, Random Forest, and K-Nearest Neighbor (KNN). This project used existing code that implements ProtoNN to detect pre-FOG. However, since the code was not fully works, we need to do bug fixing and modification of the existing code. The modification was necessary because we need to
 adjust some incompatible codes and libraries in order to successfully run in our computer. There are two main focuses in this comparison, such as performance and model size. The results are shown in Table 3. Column “Acc” means the accuracy obtained by each classifier. The accuracy was calculated by using the equation (1). Precision and recall were calculated by using equations (2) and (3), respectively. Terms true positives (tp), true negatives (tn), false positives (fp), and false negatives (fn) compare the results of the classifier under test with external judgments. 
 
-+-----+------------------------------+------+-------------------------+-------------------------+------------+
-| No. | Algorithm                    | Acc. |        Precision        |          Recall         | Model Size |
-|     |                              |      +------+--------+---------+------+--------+---------+            |
-|     |                              |      | NA   | No FOG | Pre-FOG | NA   | No FOG | Pre-FOG |            |
-+-----+------------------------------+------+------+--------+---------+------+--------+---------+------------+
-| 1   | Support Vector Machine (SVM) | 0.72 | -    | 0.75   | 0.35    | -    | 0.93   | 0.1     | 3.99 MB    |
-+-----+------------------------------+------+------+--------+---------+------+--------+---------+------------+
-| 2   | Decision Tree                | 0.98 | 0.99 | 0.99   | 0.91    | 1    | 0.99   | 0.87    | 218 KB     |
-+-----+------------------------------+------+------+--------+---------+------+--------+---------+------------+
-| 3   | Random Forest                | 0.98 | 0.99 | 0.97   | 0.96    | 1    | 0.98   | 0.74    | 844 KB     |
-+-----+------------------------------+------+------+--------+---------+------+--------+---------+------------+
-| 4   | K-Nearest Neighbor (KNN)     | 0.92 | 0.95 | 0.81   | 0.53    | 0.97 | 0.79   | 0.38    | 13.8 MB    |
-+-----+------------------------------+------+------+--------+---------+------+--------+---------+------------+
-| 5   | ProtoNN                      | 0.95 | -    | 0.99   | 0.91    | -    | 0.90   | 0.99    | 2.18 KB    |
-+-----+------------------------------+------+------+--------+---------+------+--------+---------+------------+
+
+| No. | Algorithm                    | Acc. | Precision | Precision |         | Recall |        |         | Model Size |
+|-----|------------------------------|------|:---------:|-----------|---------|:------:|--------|---------|------------|
+|     |                              |      | NA        | No FOG    | Pre-FOG | NA     | No FOG | Pre-FOG |            |
+| 1   | Support Vector Machine (SVM) | 0.72 | -         | 0.75      | 0.35    | -      | 0.93   | 0.1     | 3.99 MB    |
+| 2   | Decision Tree                | 0.98 | 0.99      | 0.99      | 0.91    | 1      | 0.99   | 0.87    | 218 KB     |
+| 3   | Random Forest                | 0.98 | 0.99      | 0.97      | 0.96    | 1      | 0.98   | 0.74    | 844 KB     |
+| 4   | K-Nearest Neighbor (KNN)     | 0.92 | 0.95      | 0.81      | 0.53    | 0.97   | 0.79   | 0.38    | 13.8 MB    |
+| 5   | ProtoNN                      | 0.95 | -         | 0.99      | 0.91    | -      | 0.90   | 0.99    | 2.18 KB    |
 
 * NA = No Activity
 * No FOG = No Freezing of Gait
