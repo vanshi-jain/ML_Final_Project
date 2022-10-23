@@ -1,5 +1,8 @@
 # ML_Final_Project
 This is a final course-end project for EECE 5640 Machine Learning and Pattern Recognition taught by Prof. Deniz Erdogmus
+![image](https://user-images.githubusercontent.com/52538805/197419967-624c25be-cc20-4857-b48c-2c02a662ea9d.png)
+
+FOG detection and feedback system worn by a patient. The system consists of a wearable computer, a set of acceleration sensors, and headphones. Acceleration sensors are attached to the shank and the thigh using an elasticized strap and Velcro. A third sensor and the wearable computer are attached to the belt. The sensors are wirelessly connected to the wearable computer; the headphones are connected by a cable to the computer.
 
 # Motivation and Aim behind this project 
 Parkinson's disease is one of the common neurological disorders. This disease is caused by the progressive loss of dopaminergic and other subcortical neurons. The common negative effects are flexed posture, tremors at rest, rigidity, akinesia, postural instability, and motor blocks. Generally, motor blocks affect the patients’ leg during walking and this event is referred to as Freezing of Gait (FOG).
